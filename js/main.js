@@ -1,3 +1,9 @@
+//preloader
+var preloader = document.getElementById('loading');
+function myFunction(){
+  preloader.style.display = 'none';
+}
+
 jQuery(document).ready(function ($) {
 
   // Header fixed and Back to top button
@@ -184,7 +190,7 @@ anime.timeline({loop: true})
   });
 
  //submit alert
- function myFunction() {
+ function myFunction1()  {
   alert("Your message have been recorded");
 }
  

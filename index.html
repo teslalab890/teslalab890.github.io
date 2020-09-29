@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
   <title> TESLA L@B</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="true">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
   <link href="img/favicon.png"  sizes="16x16" type="image/png" rel="icon">
   <link href="img/apple-touch-icon.JPG" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,12 +23,15 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
   <!--js link-->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- =======================================================
     Theme Name: Regna
@@ -39,30 +41,38 @@
   ======================================================= -->
 </head>
 
-<body>
+<body onload="myFunction()">
+
+  <div id="loading"></div>
+
+  <!--===========PHP============>
+  <?php
+    include('includes/header.php');
+  ?>
+  ============#PHP============-->
 
   <!--==========================
   Header
   ============================-->
   <header id="header">
     <div class="container">
-      <div id="logo" class="pull-left">
-        <a href="#hero"><img src="img/final logo.png" alt="" title="" /></img></a>
+      <div id="logo" class="pull-left" style="top: 4.8px;">
+        <a href="http://teslalab.ml"><img src="img/final logo.png" alt="Tesla Lab Logo" title="" /></img></a>
          
-      </div>   
+      </div>
       
 
       <nav id="nav-menu-container">
         
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li class="menu-active"><a href="">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services"> OUR WORKS </a></li>
           <li><a href="#portfolio"> BLOGS </a></li>
           
           <li class="menu-has-children"><a href="">Authority</a>
             <ul>
-              <li><a href="panel">PANEL MEMBERS</a></li>
+              <li><a href="panel.html">PANEL MEMBERS</a></li>
                  <!---- <li class="menu-has-children"><a href="#">Drop Down 2</a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -72,12 +82,12 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li> ---->
-              <li><a href="#">CAMPUS AMBASSEDORS</a></li>
+              <li><a href="#">CAMPUS AMBASSADORS</a></li>
              <!---- <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>--->
             </ul>
           </li>
-          <li><a href="https://www.facebook.com/events/237446380838391/"> Event </a></li>
+          <li><a href="https://www.facebook.com/events/237446380838391/" target="_self"> Event </a></li>
           <li><a href="#contact">Contact Us</a></li>
 
         </ul>
@@ -111,6 +121,7 @@
     ============================-->
     <section id="about">
       <div class="container">
+        
         <div class="row about-container">
 
           <div class="col-lg-6 content order-lg-1 order-2">
@@ -122,7 +133,7 @@
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fa fa-superpowers"></i></div>
               <h4 class="title"><a href=""></a></h4>
-              <p class="description">If a student at Tesla Lab has a problem with any of his projects, our lab will try its best to solve it</p>
+              <p class="description">If a student of Tesla Lab has a problem with any of his projects, our lab will try its best to solve it</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
@@ -148,7 +159,7 @@
     <!--==========================
       Facts Section
     ============================-->
-<!-----    <section id="facts">
+    <!-----    <section id="facts">
       <div class="container wow fadeIn">
         <div class="section-header">
           <h3 class="section-title">Facts</h3>
@@ -194,23 +205,23 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="box">
-              <div class="icon"><a href="https://www.facebook.com/events/237446380838391?active_tab=about"><i class="fa fa-calendar-o"></i></a></div>
-              <h4 class="title"><a href="https://www.facebook.com/events/237446380838391?active_tab=about"> SCIENCE MASTER 1.0 </a></h4>
+              <div class="icon"><a href="https://www.facebook.com/events/237446380838391?active_tab=about" target="_blank"><i class="fa fa-calendar-o"></i></a></div>
+              <h4 class="title"><a href="https://www.facebook.com/events/237446380838391?active_tab=about" target="_blank"> SCIENCE MASTER 1.0 </a></h4>
               <p class="description"> IT'S A ONLINE SCIENCE COMPITION . IN THIS EVENT WE GOT 1.7K RESPONSE </p>
-              <div id="sm1"><a href="https://www.facebook.com/events/237446380838391?active_tab=about"><img src="event.jpg"></a></div>
+              <div id="sm1"><a href="https://www.facebook.com/events/237446380838391?active_tab=about" target="_blank"><img src="science-master-1.0.jpg" alt="Science Master 1.0"></a></div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-bandcamp"></i></a></div>
-              <h4 class="title"><a href=""> SCIENTIFIC BLOGS</a></h4>
-              <p class="description"> OUR BLOGS CONTAIN MANY STUNING INFORMATION ABOUT MORDRN & FUTURE SCIENCE</p>
+              <div class="icon"><a href="#portfolio"><i class="fa fa-bandcamp"></i></a></div>
+              <h4 class="title"><a href="#portfolio"> SCIENTIFIC BLOGS</a></h4>
+              <p class="description"> OUR BLOGS CONTAIN MANY STUNING INFORMATION ABOUT MORDERN & FUTURE SCIENCE</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-linode"></i></a></div>
-              <h4 class="title"><a href=""> FB PAGE </a></h4>
+              <div class="icon"><a href="https://www.facebook.com/teslalab300" target="_blank"><i class="fa fa-linode"></i></a></div>
+              <h4 class="title"><a href="https://www.facebook.com/teslalab300" target="_blank"> FB PAGE </a></h4>
               <p class="description"> THIS PAGE IS THE MIRROR OF OUR ORGANIZATION</p>
             </div>
           </div>
@@ -245,7 +256,7 @@
     </section><!-- #services -->
 
                 <!-- Swiper -->
-                <h1 class="text-center" style="color: black;" id="panel"><b>Panel Members</b></h1>
+  <!----              <h1 class="text-center" style="color: black;" id="panel"><b>Panel Members</b></h1>
                 <div class="swiper-container">
                   <div class="swiper-wrapper" >
                     <div class="swiper-slide"><img src="img/PANEL MEMBERS/1.jpg" class="im"></div>
@@ -257,15 +268,15 @@
                     <div class="swiper-slide"><img src="img/PANEL MEMBERS/7.jpg" class="im"></div>
                     
                   </div>
-                  <!-- Add Pagination -->
+                  < Add Pagination >
                   <div class="swiper-pagination"></div>
-                  <!-- Add Arrows -->
+                  <- Add Arrows --
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                 </div>
               
-                <!-- Swiper JS -->
-                <script src="../package/swiper-bundle.min.js"></script>
+                < Swiper JS >
+                <script src="../package/swiper-bundle.min.js"></script>  --->
 
     <!--==========================
     group Section
@@ -302,23 +313,23 @@
               <li data-filter=".filter-app">Astronomy</li> <!--APP-->
               <li data-filter=".filter-card">Science</li> <!--card-->
               <li data-filter=".filter-logo">Biography</li> <!--logo-->
-              <li> <a href="https://panzoid.com/">More blogs</a> </li>   <!--web--> <!--data-filter=".filter-web"-->
+              <li>More blogs</li>   <!--web--> <!--data-filter=".filter-web"-->
             </ul>
           </div>
         </div>
 
         <div class="row" id="portfolio-wrapper">
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app1.jpg" alt="">
+            <a href="blogs/en/astro-1.html">
+              <img width="100%" height="100%" src="img\blog-images\new-planet-found-orbiting-a-star.jpg" alt="New planet found orbiting a dead star">
               <div class="details">
-                <h4>App 1</h4>
-                <span>Alored dono par</span>
+                <h4 transform="uppercase">New planet found orbiting a dead...</h4>
+                <span>Samin Sikder & Wikipedia</span>
               </div>
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-3 col-md-6 portfolio-item filter-web">
             <a href="">
               <img src="img/portfolio/web2.jpg" alt="">
               <div class="details">
@@ -326,39 +337,29 @@
                 <span>Alored dono par</span>
               </div>
             </a>
-          </div>
+          </div> -->
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app3.jpg" alt="">
+            <a href="blogs/en/astro-2.html">
+              <img width="100%" height="100%" src="img\blog-images\hubble-watches-a-suspected-exoplanet-disappear-before-its-very-eyes.jpg" alt="Hubble watches a suspected exoplanet disappear before its very eyes">
               <div class="details">
-                <h4>App 3</h4>
-                <span>Alored dono par</span>
+                <h4>A suspected exoplanet dissappears...</h4>
+                <span>Samin Sikder & Wikipedia</span>
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card1.jpg" alt="">
+            <a href="blogs/en/sci-1.html">
+              <img width="100%" height="100%" src="img/blog-images/demonic-pleasure.png" alt="">
               <div class="details">
-                <h4>Card 1</h4>
-                <span>Alored dono par</span>
+                <h4>Demonic Pleasure</h4>
+                <span>Fabiha Labiba Subah</span>
               </div>
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card2.jpg" alt="">
-              <div class="details">
-                <h4>Card 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-3 col-md-6 portfolio-item filter-web">
             <a href="">
               <img src="img/portfolio/web3.jpg" alt="">
               <div class="details">
@@ -366,39 +367,49 @@
                 <span>Alored dono par</span>
               </div>
             </a>
+          </div> -->
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="blogs/bn/sci-2.html">
+              <img width="100%" height="100%" src="img\blog-images\nanotech-1.png" alt="Nanotechnology">
+              <div class="details">
+                <h4>ন্যানোটেক : ক্ষুদ্র প্রযুক্তির ব্যাপক বিজ্ঞান</h4>
+                <span>নাফিজ আহমেদ নিলয়</span>
+              </div>
+            </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card3.jpg" alt="">
+            <a href="blogs/en/sci-3.html">
+              <img width="100%" height="100%" src="img\blog-images\sophia.png" alt="Sophia">
               <div class="details">
-                <h4>Card 3</h4>
-                <span>Alored dono par</span>
+                <h4>World's first robot to get citizenship</h4>
+                <span>Nafiz Ahmed Niloy & Wikipedia</span>
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app2.jpg" alt="">
+            <a href="/blogs/en/astro-3.html">
+              <img width="100%" height="100%" src="img\blog-images\astronomers-spy-phosphine-on-venus-a-potential-sign-of-life.jpg" alt="Astronomers spy phosphine on Venus, a potential sign of life">
               <div class="details">
-                <h4>App 2</h4>
-                <span>Alored dono par</span>
+                <h4>Spy on Venus, potential sign of life</h4>
+                <span>Samin Sikder & Wikipedia</span>
               </div>
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo1.jpg" alt="">
+            <a href="blogs/en/bio-1.html">
+              <img  width="100%" height="100%" src="img/blog-images/tesla.jpg" alt="Nikola Tesla">
               <div class="details">
-                <h4>Logo 1</h4>
-                <span>Alored dono par</span>
+                <h4>Nikola Tesla Biography</h4>
+                <span>Samin Sikder & Wikipedia</span>
               </div>
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+          <!-- <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
             <a href="">
               <img src="img/portfolio/logo3.jpg" alt="">
               <div class="details">
@@ -406,9 +417,9 @@
                 <span>Alored dono par</span>
               </div>
             </a>
-          </div>
+          </div> -->
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-3 col-md-6 portfolio-item filter-web">
             <a href="">
               <img src="img/portfolio/web1.jpg" alt="">
               <div class="details">
@@ -416,14 +427,14 @@
                 <span>Alored dono par</span>
               </div>
             </a>
-          </div>
+          </div> -->
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo2.jpg" alt="">
+            <a href="blogs/en/bio-2.html">
+              <img width="100%" height="100%" src="img/blog-images/the-apple-myth-isaac-newton.jpg" alt="Isaac Newton">
               <div class="details">
-                <h4>Logo 2</h4>
-                <span>Alored dono par</span>
+                <h4>Isaac Newton Biography</h4>
+                <span>Samin Sikder & Wikipedia</span>
               </div>
             </a>
           </div>
@@ -436,7 +447,7 @@
     <!--==========================
       Team Section
     ============================-->
-  <!----- <section id="team">
+    <!----- <section id="team">
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Team</h3>
@@ -525,27 +536,30 @@
             <div class="info">
               <div>
                 <i class="fa fa-map-marker"></i>
-                <p>not now</p>
+                <p style="color: black;">not now</p>
               </div>
 
               <div>
-                <i class="fa fa-envelope"></i>
-                <p>teslalab300@gmail.com</p>
+                <a href="mailto:teslalab300@gmail.com">
+                  <i class="fa fa-envelope"></i>
+                  <p style="color: black;">teslalab300@gmail.com</p>
+                </a>
               </div>
 
               <div>
                 <i class="fa fa-phone"></i>
-                <p>+88 01708749200 <br/>+88 01709186286</p>
+                <p style="color: black;">+88 01708749200 <br/>+88 01709186286</p>
               </div>
             </div>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-              <a href="https://www.facebook.com/teslalab300" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-           <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> 
-             <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> 
-            </div>
+              <abbr title="Twitter"><a href="#contact" class="twitter"><i class="fa fa-twitter"></i></a></abbr>
+              <abbr title="Facebook Page"><a href="https://www.facebook.com/teslalab300" class="facebook"><i aria-hidden="true" class="fa fa-facebook"></i></a></abbr>
+              <abbr title="Message Us"><a href="https://m.me/teslalab300" class="messenger"><i class="fab fa-facebook-messenger" aria-hidden="true"></i></a></abbr>
+              <abbr title="Instagram Page"><a href="https://www.instagram.com/teslalab_official" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></abbr>
+         <!----   <abbr title="Google Plus"><a href="#contact" class="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></abbr>
+              <abbr title="LinkedIn"><a href="#contact" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></abbr>
+           ---> </div>
 
           </div>
 
@@ -570,7 +584,7 @@
                   <textarea class="form-control" name="entry.390443107" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button type="submit"  onclick="myFunction()"> Send Message</button></div>
+                <div class="text-center"><button type="submit"  onclick="myFunction1()"> Send Message</button></div>
               </form>
             </div>
           </div>
@@ -581,31 +595,32 @@
     </section><!-- #contact -->
 
   </main>
-
-  <!--==========================
+  
+    <!--===========PHP============>
+    <?php
+      include('includes/footer.php');
+    ?>
+    ============#PHP============-->
+    
+    <!--==========================
     Footer
-  ============================-->
-  <footer id="footer">
-    <div class="footer-top">
+    ============================-->
+    <footer id="footer">
+      <div class="footer-top">
       <div class="container">
 
       </div>
-    </div>
+      </div>
 
-    <div class="container">
+      <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>  TESLA LAB</strong>. All Rights Reserved
+          &copy; Copyright <strong>  TESLA LAB</strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
-        -->
-        Designed by <a href="https://bootstrap.com/">MAHDIATH HASAN <br/> MAHMODUL HASAN</a>
+         
+          Designed by <a id="lifot" href="https://bootstrapmade.com/"> <br/> MAHDIATH HASAN <br/> MAHMODUL HASAN <br/> S. M. RANA NAWAL</a>
       </div>
-    </div>
+      </div>
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
@@ -626,6 +641,9 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/8b59f9c63b.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
